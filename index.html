@@ -228,13 +228,14 @@
   </header>
 
   <main class="main-content">
-    <h1 class="page-title" id="gallery-title">Card News Germany</h1>
+    <h1 class="page-title" id="gallery-title">Card News All</h1>
     <p class="page-subtitle" id="gallery-subtitle">Select region and language</p>
     <div class="page-selectors">
       <div class="nav-group">
         <span class="selector-label">Region</span>
 
-        <button class="country-btn active" data-country="de" data-name-ko="독일" data-name-en="Germany">Germany</button>
+        <button class="country-btn active" data-country="all" data-name-ko="전체" data-name-en="All">All</button>
+        <button class="country-btn" data-country="de" data-name-ko="독일" data-name-en="Germany">Germany</button>
         <button class="country-btn" data-country="fr" data-name-ko="프랑스" data-name-en="France">France</button>
         <button class="country-btn" data-country="it" data-name-ko="이탈리아" data-name-en="Italy">Italy</button>
         <button class="country-btn" data-country="es" data-name-ko="스페인" data-name-en="Spain">Spain</button>
@@ -245,9 +246,8 @@
       <div class="nav-break"></div>
       <div class="nav-group">
         <span class="selector-label">Language</span>
-        <button class="lang-btn active" data-lang="all">All</button>
 
-        <button class="lang-btn" data-lang="en">English</button>
+        <button class="lang-btn active" data-lang="en">English</button>
         <button class="lang-btn" data-lang="de">Deutsch</button>
         <button class="lang-btn" data-lang="es">Español</button>
         <button class="lang-btn" data-lang="fr">Français</button>
@@ -260,11 +260,27 @@
 
   <section class="country-section" data-country="de" data-name-ko="독일" data-name-en="Germany">
     <section class="lang-section" data-lang="en">
-      <h2 class="lang-title">English</h2>
+      <h2 class="lang-title">Germany</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="de/en/cards/card_en_20260223_1252_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="de/en/cards/card_en_20260223_1252_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="de/en/cards/card_en_20260223_1252_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="de/en/cards/card_en_20260223_1252_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="de/en/cards/card_en_20260223_1252_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="de/en/cards/card_en_20260223_1252_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -282,7 +298,7 @@
                 </div>
                 <div class="card-counter">1 / 8</div>
               </div>
-              <div class="date-group" data-date-idx="1">
+              <div class="date-group" data-date-idx="2">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -300,7 +316,9 @@
                 </div>
                 <div class="card-counter">1 / 8</div>
               </div>
-              <div class="date-group" data-date-idx="2">
+            </div>
+            <div class="date-page" data-page-idx="1">
+              <div class="date-group" data-date-idx="3">
                 <div class="date-label">21 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -320,14 +338,34 @@
               </div>
             </div>
         </div>
+        <div class="date-pagination">
+          <button class="date-page-btn active" data-page="0">1</button>
+          <button class="date-page-btn" data-page="1">2</button>
+        </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="de">
-      <h2 class="lang-title">Deutsch</h2>
+    <section class="lang-section hidden" data-lang="de">
+      <h2 class="lang-title">Germany</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="de/de/cards/card_de_20260223_1252_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="de/de/cards/card_de_20260223_1252_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="de/de/cards/card_de_20260223_1252_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="de/de/cards/card_de_20260223_1252_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="de/de/cards/card_de_20260223_1252_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="de/de/cards/card_de_20260223_1252_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -349,12 +387,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="es">
-      <h2 class="lang-title">Español</h2>
+    <section class="lang-section hidden" data-lang="es">
+      <h2 class="lang-title">Germany</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="de/es/cards/card_es_20260223_1252_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="de/es/cards/card_es_20260223_1252_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="de/es/cards/card_es_20260223_1252_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="de/es/cards/card_es_20260223_1252_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="de/es/cards/card_es_20260223_1252_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="de/es/cards/card_es_20260223_1252_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -376,12 +430,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="fr">
-      <h2 class="lang-title">Français</h2>
+    <section class="lang-section hidden" data-lang="fr">
+      <h2 class="lang-title">Germany</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="de/fr/cards/card_fr_20260223_1252_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="de/fr/cards/card_fr_20260223_1252_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="de/fr/cards/card_fr_20260223_1252_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="de/fr/cards/card_fr_20260223_1252_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="de/fr/cards/card_fr_20260223_1252_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="de/fr/cards/card_fr_20260223_1252_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -403,12 +473,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="it">
-      <h2 class="lang-title">Italiano</h2>
+    <section class="lang-section hidden" data-lang="it">
+      <h2 class="lang-title">Germany</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="de/it/cards/card_it_20260223_1252_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="de/it/cards/card_it_20260223_1252_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="de/it/cards/card_it_20260223_1252_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="de/it/cards/card_it_20260223_1252_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="de/it/cards/card_it_20260223_1252_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="de/it/cards/card_it_20260223_1252_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -430,12 +516,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="cn">
-      <h2 class="lang-title">中文</h2>
+    <section class="lang-section hidden" data-lang="cn">
+      <h2 class="lang-title">Germany</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="de/cn/cards/card_cn_20260223_1252_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="de/cn/cards/card_cn_20260223_1252_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="de/cn/cards/card_cn_20260223_1252_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="de/cn/cards/card_cn_20260223_1252_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="de/cn/cards/card_cn_20260223_1252_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="de/cn/cards/card_cn_20260223_1252_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -457,12 +559,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="jp">
-      <h2 class="lang-title">日本語</h2>
+    <section class="lang-section hidden" data-lang="jp">
+      <h2 class="lang-title">Germany</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="de/jp/cards/card_jp_20260223_1252_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="de/jp/cards/card_jp_20260223_1252_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="de/jp/cards/card_jp_20260223_1252_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="de/jp/cards/card_jp_20260223_1252_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="de/jp/cards/card_jp_20260223_1252_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="de/jp/cards/card_jp_20260223_1252_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -484,12 +602,62 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="kr">
-      <h2 class="lang-title">한국어</h2>
+    <section class="lang-section hidden" data-lang="kr">
+      <h2 class="lang-title">Germany</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="de/kr/cards/card_kr_20260223_1252_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="de/kr/cards/card_kr_20260223_1252_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="de/kr/cards/card_kr_20260223_1252_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="de/kr/cards/card_kr_20260223_1252_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="de/kr/cards/card_kr_20260223_1252_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="de/kr/cards/card_kr_20260223_1252_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="de/kr/cards/card_kr_20260223_1248_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="de/kr/cards/card_kr_20260223_1248_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="de/kr/cards/card_kr_20260223_1248_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="de/kr/cards/card_kr_20260223_1248_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="de/kr/cards/card_kr_20260223_1248_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="de/kr/cards/card_kr_20260223_1248_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="2">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="de/kr/cards/card_kr_20260223_1246_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="de/kr/cards/card_kr_20260223_1246_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="de/kr/cards/card_kr_20260223_1246_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="de/kr/cards/card_kr_20260223_1246_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="de/kr/cards/card_kr_20260223_1246_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="de/kr/cards/card_kr_20260223_1246_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+            </div>
+            <div class="date-page" data-page-idx="1">
+              <div class="date-group" data-date-idx="3">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -509,16 +677,36 @@
               </div>
             </div>
         </div>
+        <div class="date-pagination">
+          <button class="date-page-btn active" data-page="0">1</button>
+          <button class="date-page-btn" data-page="1">2</button>
+        </div>
       </div>
     </section>
   </section>
-  <section class="country-section hidden" data-country="fr" data-name-ko="프랑스" data-name-en="France">
+  <section class="country-section" data-country="fr" data-name-ko="프랑스" data-name-en="France">
     <section class="lang-section" data-lang="en">
-      <h2 class="lang-title">English</h2>
+      <h2 class="lang-title">France</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="fr/en/cards/card_en_20260223_1256_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="fr/en/cards/card_en_20260223_1256_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="fr/en/cards/card_en_20260223_1256_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="fr/en/cards/card_en_20260223_1256_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="fr/en/cards/card_en_20260223_1256_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="fr/en/cards/card_en_20260223_1256_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -540,12 +728,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="de">
-      <h2 class="lang-title">Deutsch</h2>
+    <section class="lang-section hidden" data-lang="de">
+      <h2 class="lang-title">France</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="fr/de/cards/card_de_20260223_1256_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="fr/de/cards/card_de_20260223_1256_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="fr/de/cards/card_de_20260223_1256_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="fr/de/cards/card_de_20260223_1256_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="fr/de/cards/card_de_20260223_1256_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="fr/de/cards/card_de_20260223_1256_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -567,12 +771,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="es">
-      <h2 class="lang-title">Español</h2>
+    <section class="lang-section hidden" data-lang="es">
+      <h2 class="lang-title">France</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="fr/es/cards/card_es_20260223_1256_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="fr/es/cards/card_es_20260223_1256_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="fr/es/cards/card_es_20260223_1256_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="fr/es/cards/card_es_20260223_1256_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="fr/es/cards/card_es_20260223_1256_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="fr/es/cards/card_es_20260223_1256_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -594,12 +814,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="fr">
-      <h2 class="lang-title">Français</h2>
+    <section class="lang-section hidden" data-lang="fr">
+      <h2 class="lang-title">France</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="fr/fr/cards/card_fr_20260223_1256_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="fr/fr/cards/card_fr_20260223_1256_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="fr/fr/cards/card_fr_20260223_1256_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="fr/fr/cards/card_fr_20260223_1256_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="fr/fr/cards/card_fr_20260223_1256_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="fr/fr/cards/card_fr_20260223_1256_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -621,12 +857,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="it">
-      <h2 class="lang-title">Italiano</h2>
+    <section class="lang-section hidden" data-lang="it">
+      <h2 class="lang-title">France</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="fr/it/cards/card_it_20260223_1256_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="fr/it/cards/card_it_20260223_1256_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="fr/it/cards/card_it_20260223_1256_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="fr/it/cards/card_it_20260223_1256_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="fr/it/cards/card_it_20260223_1256_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="fr/it/cards/card_it_20260223_1256_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -648,12 +900,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="cn">
-      <h2 class="lang-title">中文</h2>
+    <section class="lang-section hidden" data-lang="cn">
+      <h2 class="lang-title">France</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="fr/cn/cards/card_cn_20260223_1256_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="fr/cn/cards/card_cn_20260223_1256_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="fr/cn/cards/card_cn_20260223_1256_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="fr/cn/cards/card_cn_20260223_1256_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="fr/cn/cards/card_cn_20260223_1256_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="fr/cn/cards/card_cn_20260223_1256_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -675,12 +943,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="jp">
-      <h2 class="lang-title">日本語</h2>
+    <section class="lang-section hidden" data-lang="jp">
+      <h2 class="lang-title">France</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="fr/jp/cards/card_jp_20260223_1256_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="fr/jp/cards/card_jp_20260223_1256_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="fr/jp/cards/card_jp_20260223_1256_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="fr/jp/cards/card_jp_20260223_1256_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="fr/jp/cards/card_jp_20260223_1256_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="fr/jp/cards/card_jp_20260223_1256_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -702,12 +986,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="kr">
-      <h2 class="lang-title">한국어</h2>
+    <section class="lang-section hidden" data-lang="kr">
+      <h2 class="lang-title">France</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="fr/kr/cards/card_kr_20260223_1256_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="fr/kr/cards/card_kr_20260223_1256_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="fr/kr/cards/card_kr_20260223_1256_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="fr/kr/cards/card_kr_20260223_1256_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="fr/kr/cards/card_kr_20260223_1256_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="fr/kr/cards/card_kr_20260223_1256_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -730,13 +1030,29 @@
       </div>
     </section>
   </section>
-  <section class="country-section hidden" data-country="it" data-name-ko="이탈리아" data-name-en="Italy">
+  <section class="country-section" data-country="it" data-name-ko="이탈리아" data-name-en="Italy">
     <section class="lang-section" data-lang="en">
-      <h2 class="lang-title">English</h2>
+      <h2 class="lang-title">Italy</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="it/en/cards/card_en_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="it/en/cards/card_en_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="it/en/cards/card_en_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="it/en/cards/card_en_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="it/en/cards/card_en_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="it/en/cards/card_en_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -758,12 +1074,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="de">
-      <h2 class="lang-title">Deutsch</h2>
+    <section class="lang-section hidden" data-lang="de">
+      <h2 class="lang-title">Italy</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="it/de/cards/card_de_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="it/de/cards/card_de_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="it/de/cards/card_de_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="it/de/cards/card_de_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="it/de/cards/card_de_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="it/de/cards/card_de_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -785,12 +1117,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="es">
-      <h2 class="lang-title">Español</h2>
+    <section class="lang-section hidden" data-lang="es">
+      <h2 class="lang-title">Italy</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="it/es/cards/card_es_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="it/es/cards/card_es_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="it/es/cards/card_es_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="it/es/cards/card_es_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="it/es/cards/card_es_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="it/es/cards/card_es_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -812,12 +1160,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="fr">
-      <h2 class="lang-title">Français</h2>
+    <section class="lang-section hidden" data-lang="fr">
+      <h2 class="lang-title">Italy</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="it/fr/cards/card_fr_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="it/fr/cards/card_fr_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="it/fr/cards/card_fr_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="it/fr/cards/card_fr_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="it/fr/cards/card_fr_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="it/fr/cards/card_fr_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -839,12 +1203,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="it">
-      <h2 class="lang-title">Italiano</h2>
+    <section class="lang-section hidden" data-lang="it">
+      <h2 class="lang-title">Italy</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="it/it/cards/card_it_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="it/it/cards/card_it_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="it/it/cards/card_it_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="it/it/cards/card_it_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="it/it/cards/card_it_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="it/it/cards/card_it_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -866,12 +1246,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="cn">
-      <h2 class="lang-title">中文</h2>
+    <section class="lang-section hidden" data-lang="cn">
+      <h2 class="lang-title">Italy</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="it/cn/cards/card_cn_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="it/cn/cards/card_cn_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="it/cn/cards/card_cn_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="it/cn/cards/card_cn_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="it/cn/cards/card_cn_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="it/cn/cards/card_cn_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -893,12 +1289,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="jp">
-      <h2 class="lang-title">日本語</h2>
+    <section class="lang-section hidden" data-lang="jp">
+      <h2 class="lang-title">Italy</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="it/jp/cards/card_jp_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="it/jp/cards/card_jp_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="it/jp/cards/card_jp_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="it/jp/cards/card_jp_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="it/jp/cards/card_jp_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="it/jp/cards/card_jp_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -920,12 +1332,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="kr">
-      <h2 class="lang-title">한국어</h2>
+    <section class="lang-section hidden" data-lang="kr">
+      <h2 class="lang-title">Italy</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="it/kr/cards/card_kr_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="it/kr/cards/card_kr_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="it/kr/cards/card_kr_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="it/kr/cards/card_kr_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="it/kr/cards/card_kr_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="it/kr/cards/card_kr_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -948,13 +1376,29 @@
       </div>
     </section>
   </section>
-  <section class="country-section hidden" data-country="es" data-name-ko="스페인" data-name-en="Spain">
+  <section class="country-section" data-country="es" data-name-ko="스페인" data-name-en="Spain">
     <section class="lang-section" data-lang="en">
-      <h2 class="lang-title">English</h2>
+      <h2 class="lang-title">Spain</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="es/en/cards/card_en_20260223_1301_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="es/en/cards/card_en_20260223_1301_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="es/en/cards/card_en_20260223_1301_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="es/en/cards/card_en_20260223_1301_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="es/en/cards/card_en_20260223_1301_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="es/en/cards/card_en_20260223_1301_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -976,12 +1420,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="de">
-      <h2 class="lang-title">Deutsch</h2>
+    <section class="lang-section hidden" data-lang="de">
+      <h2 class="lang-title">Spain</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="es/de/cards/card_de_20260223_1301_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="es/de/cards/card_de_20260223_1301_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="es/de/cards/card_de_20260223_1301_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="es/de/cards/card_de_20260223_1301_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="es/de/cards/card_de_20260223_1301_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="es/de/cards/card_de_20260223_1301_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1003,12 +1463,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="es">
-      <h2 class="lang-title">Español</h2>
+    <section class="lang-section hidden" data-lang="es">
+      <h2 class="lang-title">Spain</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="es/es/cards/card_es_20260223_1301_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="es/es/cards/card_es_20260223_1301_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="es/es/cards/card_es_20260223_1301_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="es/es/cards/card_es_20260223_1301_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="es/es/cards/card_es_20260223_1301_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="es/es/cards/card_es_20260223_1301_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1030,12 +1506,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="fr">
-      <h2 class="lang-title">Français</h2>
+    <section class="lang-section hidden" data-lang="fr">
+      <h2 class="lang-title">Spain</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="es/fr/cards/card_fr_20260223_1301_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="es/fr/cards/card_fr_20260223_1301_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="es/fr/cards/card_fr_20260223_1301_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="es/fr/cards/card_fr_20260223_1301_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="es/fr/cards/card_fr_20260223_1301_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="es/fr/cards/card_fr_20260223_1301_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1057,12 +1549,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="it">
-      <h2 class="lang-title">Italiano</h2>
+    <section class="lang-section hidden" data-lang="it">
+      <h2 class="lang-title">Spain</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="es/it/cards/card_it_20260223_1301_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="es/it/cards/card_it_20260223_1301_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="es/it/cards/card_it_20260223_1301_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="es/it/cards/card_it_20260223_1301_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="es/it/cards/card_it_20260223_1301_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="es/it/cards/card_it_20260223_1301_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1084,12 +1592,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="cn">
-      <h2 class="lang-title">中文</h2>
+    <section class="lang-section hidden" data-lang="cn">
+      <h2 class="lang-title">Spain</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="es/cn/cards/card_cn_20260223_1301_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="es/cn/cards/card_cn_20260223_1301_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="es/cn/cards/card_cn_20260223_1301_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="es/cn/cards/card_cn_20260223_1301_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="es/cn/cards/card_cn_20260223_1301_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="es/cn/cards/card_cn_20260223_1301_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1111,12 +1635,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="jp">
-      <h2 class="lang-title">日本語</h2>
+    <section class="lang-section hidden" data-lang="jp">
+      <h2 class="lang-title">Spain</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="es/jp/cards/card_jp_20260223_1301_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="es/jp/cards/card_jp_20260223_1301_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="es/jp/cards/card_jp_20260223_1301_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="es/jp/cards/card_jp_20260223_1301_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="es/jp/cards/card_jp_20260223_1301_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="es/jp/cards/card_jp_20260223_1301_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1138,12 +1678,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="kr">
-      <h2 class="lang-title">한국어</h2>
+    <section class="lang-section hidden" data-lang="kr">
+      <h2 class="lang-title">Spain</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="es/kr/cards/card_kr_20260223_1301_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="es/kr/cards/card_kr_20260223_1301_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="es/kr/cards/card_kr_20260223_1301_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="es/kr/cards/card_kr_20260223_1301_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="es/kr/cards/card_kr_20260223_1301_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="es/kr/cards/card_kr_20260223_1301_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1166,13 +1722,29 @@
       </div>
     </section>
   </section>
-  <section class="country-section hidden" data-country="cn" data-name-ko="중국" data-name-en="China">
+  <section class="country-section" data-country="cn" data-name-ko="중국" data-name-en="China">
     <section class="lang-section" data-lang="en">
-      <h2 class="lang-title">English</h2>
+      <h2 class="lang-title">China</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="cn/en/cards/card_en_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="cn/en/cards/card_en_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="cn/en/cards/card_en_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="cn/en/cards/card_en_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="cn/en/cards/card_en_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="cn/en/cards/card_en_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1194,12 +1766,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="de">
-      <h2 class="lang-title">Deutsch</h2>
+    <section class="lang-section hidden" data-lang="de">
+      <h2 class="lang-title">China</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="cn/de/cards/card_de_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="cn/de/cards/card_de_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="cn/de/cards/card_de_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="cn/de/cards/card_de_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="cn/de/cards/card_de_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="cn/de/cards/card_de_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1221,12 +1809,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="es">
-      <h2 class="lang-title">Español</h2>
+    <section class="lang-section hidden" data-lang="es">
+      <h2 class="lang-title">China</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="cn/es/cards/card_es_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="cn/es/cards/card_es_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="cn/es/cards/card_es_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="cn/es/cards/card_es_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="cn/es/cards/card_es_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="cn/es/cards/card_es_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1248,12 +1852,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="fr">
-      <h2 class="lang-title">Français</h2>
+    <section class="lang-section hidden" data-lang="fr">
+      <h2 class="lang-title">China</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="cn/fr/cards/card_fr_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="cn/fr/cards/card_fr_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="cn/fr/cards/card_fr_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="cn/fr/cards/card_fr_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="cn/fr/cards/card_fr_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="cn/fr/cards/card_fr_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1275,12 +1895,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="it">
-      <h2 class="lang-title">Italiano</h2>
+    <section class="lang-section hidden" data-lang="it">
+      <h2 class="lang-title">China</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="cn/it/cards/card_it_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="cn/it/cards/card_it_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="cn/it/cards/card_it_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="cn/it/cards/card_it_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="cn/it/cards/card_it_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="cn/it/cards/card_it_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1302,12 +1938,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="cn">
-      <h2 class="lang-title">中文</h2>
+    <section class="lang-section hidden" data-lang="cn">
+      <h2 class="lang-title">China</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="cn/cn/cards/card_cn_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="cn/cn/cards/card_cn_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="cn/cn/cards/card_cn_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="cn/cn/cards/card_cn_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="cn/cn/cards/card_cn_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="cn/cn/cards/card_cn_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1329,12 +1981,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="jp">
-      <h2 class="lang-title">日本語</h2>
+    <section class="lang-section hidden" data-lang="jp">
+      <h2 class="lang-title">China</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="cn/jp/cards/card_jp_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="cn/jp/cards/card_jp_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="cn/jp/cards/card_jp_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="cn/jp/cards/card_jp_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="cn/jp/cards/card_jp_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="cn/jp/cards/card_jp_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1356,12 +2024,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="kr">
-      <h2 class="lang-title">한국어</h2>
+    <section class="lang-section hidden" data-lang="kr">
+      <h2 class="lang-title">China</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="cn/kr/cards/card_kr_20260223_1304_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="cn/kr/cards/card_kr_20260223_1304_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="cn/kr/cards/card_kr_20260223_1304_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="cn/kr/cards/card_kr_20260223_1304_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="cn/kr/cards/card_kr_20260223_1304_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="cn/kr/cards/card_kr_20260223_1304_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1384,13 +2068,29 @@
       </div>
     </section>
   </section>
-  <section class="country-section hidden" data-country="jp" data-name-ko="일본" data-name-en="Japan">
+  <section class="country-section" data-country="jp" data-name-ko="일본" data-name-en="Japan">
     <section class="lang-section" data-lang="en">
-      <h2 class="lang-title">English</h2>
+      <h2 class="lang-title">Japan</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="jp/en/cards/card_en_20260223_1305_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="jp/en/cards/card_en_20260223_1305_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="jp/en/cards/card_en_20260223_1305_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="jp/en/cards/card_en_20260223_1305_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="jp/en/cards/card_en_20260223_1305_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="jp/en/cards/card_en_20260223_1305_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1412,12 +2112,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="de">
-      <h2 class="lang-title">Deutsch</h2>
+    <section class="lang-section hidden" data-lang="de">
+      <h2 class="lang-title">Japan</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="jp/de/cards/card_de_20260223_1305_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="jp/de/cards/card_de_20260223_1305_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="jp/de/cards/card_de_20260223_1305_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="jp/de/cards/card_de_20260223_1305_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="jp/de/cards/card_de_20260223_1305_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="jp/de/cards/card_de_20260223_1305_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1439,12 +2155,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="es">
-      <h2 class="lang-title">Español</h2>
+    <section class="lang-section hidden" data-lang="es">
+      <h2 class="lang-title">Japan</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="jp/es/cards/card_es_20260223_1305_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="jp/es/cards/card_es_20260223_1305_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="jp/es/cards/card_es_20260223_1305_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="jp/es/cards/card_es_20260223_1305_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="jp/es/cards/card_es_20260223_1305_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="jp/es/cards/card_es_20260223_1305_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1466,8 +2198,8 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="fr">
-      <h2 class="lang-title">Français</h2>
+    <section class="lang-section hidden" data-lang="fr">
+      <h2 class="lang-title">Japan</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
@@ -1493,12 +2225,53 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="cn">
-      <h2 class="lang-title">中文</h2>
+    <section class="lang-section hidden" data-lang="it">
+      <h2 class="lang-title">Japan</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="jp/it/cards/card_it_20260223_1305_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="jp/it/cards/card_it_20260223_1305_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="jp/it/cards/card_it_20260223_1305_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="jp/it/cards/card_it_20260223_1305_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="jp/it/cards/card_it_20260223_1305_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="jp/it/cards/card_it_20260223_1305_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="lang-section hidden" data-lang="cn">
+      <h2 class="lang-title">Japan</h2>
+      <div class="date-pager">
+        <div class="date-groups">
+            <div class="date-page active" data-page-idx="0">
+              <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="jp/cn/cards/card_cn_20260223_1305_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="jp/cn/cards/card_cn_20260223_1305_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="jp/cn/cards/card_cn_20260223_1305_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="jp/cn/cards/card_cn_20260223_1305_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="jp/cn/cards/card_cn_20260223_1305_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="jp/cn/cards/card_cn_20260223_1305_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1520,12 +2293,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="jp">
-      <h2 class="lang-title">日本語</h2>
+    <section class="lang-section hidden" data-lang="jp">
+      <h2 class="lang-title">Japan</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="jp/jp/cards/card_jp_20260223_1305_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="jp/jp/cards/card_jp_20260223_1305_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="jp/jp/cards/card_jp_20260223_1305_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="jp/jp/cards/card_jp_20260223_1305_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="jp/jp/cards/card_jp_20260223_1305_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="jp/jp/cards/card_jp_20260223_1305_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1547,12 +2336,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="kr">
-      <h2 class="lang-title">한국어</h2>
+    <section class="lang-section hidden" data-lang="kr">
+      <h2 class="lang-title">Japan</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="jp/kr/cards/card_kr_20260223_1305_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="jp/kr/cards/card_kr_20260223_1305_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="jp/kr/cards/card_kr_20260223_1305_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="jp/kr/cards/card_kr_20260223_1305_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="jp/kr/cards/card_kr_20260223_1305_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="jp/kr/cards/card_kr_20260223_1305_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1575,13 +2380,29 @@
       </div>
     </section>
   </section>
-  <section class="country-section hidden" data-country="kr" data-name-ko="한국" data-name-en="Korea">
+  <section class="country-section" data-country="kr" data-name-ko="한국" data-name-en="Korea">
     <section class="lang-section" data-lang="en">
-      <h2 class="lang-title">English</h2>
+      <h2 class="lang-title">Korea</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="kr/en/cards/card_en_20260223_1325_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="kr/en/cards/card_en_20260223_1325_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="kr/en/cards/card_en_20260223_1325_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="kr/en/cards/card_en_20260223_1325_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="kr/en/cards/card_en_20260223_1325_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="kr/en/cards/card_en_20260223_1325_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1601,12 +2422,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="de">
-      <h2 class="lang-title">Deutsch</h2>
+    <section class="lang-section hidden" data-lang="de">
+      <h2 class="lang-title">Korea</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="kr/de/cards/card_de_20260223_1325_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="kr/de/cards/card_de_20260223_1325_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="kr/de/cards/card_de_20260223_1325_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="kr/de/cards/card_de_20260223_1325_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="kr/de/cards/card_de_20260223_1325_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="kr/de/cards/card_de_20260223_1325_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1626,12 +2463,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="es">
-      <h2 class="lang-title">Español</h2>
+    <section class="lang-section hidden" data-lang="es">
+      <h2 class="lang-title">Korea</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="kr/es/cards/card_es_20260223_1325_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="kr/es/cards/card_es_20260223_1325_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="kr/es/cards/card_es_20260223_1325_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="kr/es/cards/card_es_20260223_1325_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="kr/es/cards/card_es_20260223_1325_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="kr/es/cards/card_es_20260223_1325_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1651,12 +2504,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="fr">
-      <h2 class="lang-title">Français</h2>
+    <section class="lang-section hidden" data-lang="fr">
+      <h2 class="lang-title">Korea</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="kr/fr/cards/card_fr_20260223_1325_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="kr/fr/cards/card_fr_20260223_1325_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="kr/fr/cards/card_fr_20260223_1325_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="kr/fr/cards/card_fr_20260223_1325_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="kr/fr/cards/card_fr_20260223_1325_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="kr/fr/cards/card_fr_20260223_1325_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1676,12 +2545,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="it">
-      <h2 class="lang-title">Italiano</h2>
+    <section class="lang-section hidden" data-lang="it">
+      <h2 class="lang-title">Korea</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="kr/it/cards/card_it_20260223_1325_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="kr/it/cards/card_it_20260223_1325_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="kr/it/cards/card_it_20260223_1325_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="kr/it/cards/card_it_20260223_1325_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="kr/it/cards/card_it_20260223_1325_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="kr/it/cards/card_it_20260223_1325_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1701,12 +2586,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="cn">
-      <h2 class="lang-title">中文</h2>
+    <section class="lang-section hidden" data-lang="cn">
+      <h2 class="lang-title">Korea</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="kr/cn/cards/card_cn_20260223_1325_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="kr/cn/cards/card_cn_20260223_1325_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="kr/cn/cards/card_cn_20260223_1325_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="kr/cn/cards/card_cn_20260223_1325_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="kr/cn/cards/card_cn_20260223_1325_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="kr/cn/cards/card_cn_20260223_1325_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1726,12 +2627,28 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="jp">
-      <h2 class="lang-title">日本語</h2>
+    <section class="lang-section hidden" data-lang="jp">
+      <h2 class="lang-title">Korea</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="kr/jp/cards/card_jp_20260223_1325_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="kr/jp/cards/card_jp_20260223_1325_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="kr/jp/cards/card_jp_20260223_1325_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="kr/jp/cards/card_jp_20260223_1325_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="kr/jp/cards/card_jp_20260223_1325_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="kr/jp/cards/card_jp_20260223_1325_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1751,12 +2668,62 @@
         </div>
       </div>
     </section>
-    <section class="lang-section" data-lang="kr">
-      <h2 class="lang-title">한국어</h2>
+    <section class="lang-section hidden" data-lang="kr">
+      <h2 class="lang-title">Korea</h2>
       <div class="date-pager">
         <div class="date-groups">
             <div class="date-page active" data-page-idx="0">
               <div class="date-group" data-date-idx="0">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="kr/kr/cards/card_kr_20260223_1325_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="kr/kr/cards/card_kr_20260223_1325_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="kr/kr/cards/card_kr_20260223_1325_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="kr/kr/cards/card_kr_20260223_1325_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="kr/kr/cards/card_kr_20260223_1325_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="kr/kr/cards/card_kr_20260223_1325_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="1">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="kr/kr/cards/card_kr_20260223_1321_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="kr/kr/cards/card_kr_20260223_1321_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="kr/kr/cards/card_kr_20260223_1321_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="kr/kr/cards/card_kr_20260223_1321_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="kr/kr/cards/card_kr_20260223_1321_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="kr/kr/cards/card_kr_20260223_1321_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+              <div class="date-group" data-date-idx="2">
+                <div class="date-label">23 Feb 2026</div>
+                <div class="card-viewer">
+                  <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
+                  <div class="card-display">
+                    <div class="card-item active" data-card="0"><img src="kr/kr/cards/card_kr_20260223_1302_01.jpg" alt="Card 1"></div>
+                    <div class="card-item" data-card="1"><img src="kr/kr/cards/card_kr_20260223_1302_02.jpg" alt="Card 2"></div>
+                    <div class="card-item" data-card="2"><img src="kr/kr/cards/card_kr_20260223_1302_03.jpg" alt="Card 3"></div>
+                    <div class="card-item" data-card="3"><img src="kr/kr/cards/card_kr_20260223_1302_04.jpg" alt="Card 4"></div>
+                    <div class="card-item" data-card="4"><img src="kr/kr/cards/card_kr_20260223_1302_05.jpg" alt="Card 5"></div>
+                    <div class="card-item" data-card="5"><img src="kr/kr/cards/card_kr_20260223_1302_06.jpg" alt="Card 6"></div>
+                  </div>
+                  <button class="card-nav-btn card-next" data-action="card-next" aria-label="다음 뉴스">›</button>
+                </div>
+                <div class="card-counter">1 / 6</div>
+              </div>
+            </div>
+            <div class="date-page" data-page-idx="1">
+              <div class="date-group" data-date-idx="3">
                 <div class="date-label">22 Feb 2026</div>
                 <div class="card-viewer">
                   <button class="card-nav-btn card-prev" data-action="card-prev" aria-label="이전 뉴스">‹</button>
@@ -1773,6 +2740,10 @@
                 <div class="card-counter">1 / 6</div>
               </div>
             </div>
+        </div>
+        <div class="date-pagination">
+          <button class="date-page-btn active" data-page="0">1</button>
+          <button class="date-page-btn" data-page="1">2</button>
         </div>
       </div>
     </section>
@@ -1793,9 +2764,9 @@
     }
 
     function applyLangFilter() {
-      const lang = document.querySelector('.lang-btn.active')?.dataset?.lang || 'all';
+      const lang = document.querySelector('.lang-btn.active')?.dataset?.lang || '';
       document.querySelectorAll('.country-section .lang-section').forEach(sec => {
-        sec.classList.toggle('hidden', lang !== 'all' && sec.dataset.lang !== lang);
+        sec.classList.toggle('hidden', sec.dataset.lang !== lang);
       });
     }
 
@@ -1807,7 +2778,7 @@
       const nameEn = btn.dataset.nameEn;
       setPageTitle(nameEn);
       document.querySelectorAll('.country-section').forEach(sec => {
-        sec.classList.toggle('hidden', sec.dataset.country !== country);
+        sec.classList.toggle('hidden', country !== 'all' && sec.dataset.country !== country);
       });
       applyLangFilter();
       return true;
@@ -1827,7 +2798,7 @@
         const savedCountry = localStorage.getItem(STORAGE_KEY_COUNTRY);
         const savedLang = localStorage.getItem(STORAGE_KEY_LANG);
         if (savedCountry) selectCountry(savedCountry);
-        if (savedLang) selectLang(savedLang);
+        if (savedLang && savedLang !== 'all') selectLang(savedLang);
       } catch (e) {}
     }
 
